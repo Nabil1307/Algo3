@@ -1,0 +1,20 @@
+ALGORITHM Dot_product
+
+VAR
+    V[3]: real
+    U[3]: real
+    i: INTEGER
+    P: real
+BEGIN
+    FOR i from 0 to 2 DO
+        write ("donner l'element ",i+1," du Vecteur V" )
+        Read (V[i])
+        write ("donner l'element ",i+1," du Vecteur U" )
+        Read(U[i])
+    END_FOR    
+    P := 0
+    FOR i from 0 to 2 donner
+        P = P + V(i) * U(i)
+    END_FOR    
+    write("Le produit scalaire des vecteurs U et V est :" , P)
+END
